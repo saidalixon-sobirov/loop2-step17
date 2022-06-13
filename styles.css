@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #c9f8fe;
+}
+
+.container {
+  width: 1000px;
+  background: #fff;
+  display: flex;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.1);
+}
+
+.press-page {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./img/background.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+
+.media-kit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(89, 169, 146, 0.6);
+  width: max-content;
+  padding: 13px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.media-kit p {
+  margin-left: 8px;
+}
+
+.media-kit:hover {
+  background: rgba(89, 169, 146, 1);
+}
+
+.media {
+  margin: 10px 0 15px;
+}
+
+.articles-page {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px 30px 35px;
+}
+
+.title img {
+  cursor: pointer;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px 0 35px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.filter p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #aaa;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: 0.15s;
+}
+
+.filter p:first-child {
+  color: #000;
+}
+
+.filter p:hover {
+  color: #000;
+}
+
+.filter p:last-child {
+  margin-right: 0;
+}
+
+.filter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5%;
+  height: 100%;
+  background: linear-gradient(-90deg, #fff, transparent);
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px 10px 35px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.article:hover {
+  background-color: #f1f1f1;
+}
+
+.article img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.article-left {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+}
+
+.day {
+  font-size: 34px;
+  font-weight: 100;
+  margin-right: 5px;
+}
+
+.month {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.year {
+  font-weight: 500;
+  font-size: 13px;
+}
